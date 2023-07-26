@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Clash Display', sans-serif; */
+    font-family: 'Satoshi', sans-serif;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 250vh;
+    position: relative;
+    overflow-x: hidden;
+    color: #000000;
+
+}
+
+#special-text {
+    color: var(--text-color);
+}
+
+#special-text::before {
+    content: '"';
+
+}
+
+#special-text::after {
+    content: '"';
+}
+
+#header {
+    background-color: #ffffff;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    z-index: 100;
+}
+
+/* logo  */
+#logo {
+    height: 100%;
+    width: 150px;
+
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+
+}
+
+/* navigation link  */
+#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    height: 100%;
+}
+
+.nav-link {
+    height: 100%;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: .3s all;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+
+.nav-link a:hover {
+    box-shadow: 0 0 5px #00000035;
+}
+
+/* main  */
+#main {
+    width: 100%;
+    height: 90%;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* magazine subscribe inputs  */
+#subscribe {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* form to subscribe  */
+#form {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#form h1 {
+    font-size: 36px;
+}
+
+/* email input in from  */
+#form #email {
+    width: 30%;
+    min-width: 200px;
+    height: 40px;
+    padding: 10px 20px;
+    border: 2px solid var(--text-color);
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+#form #email:focus {
+    outline: 3px solid var(--text-color);
+
+
+}
+
+/* submit in form  */
+#form #submit {
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+/* feature section  */
+#features {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.feature {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.feature i {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: var(--text-color);
+}
+
+.feature .feature-text {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* video in youtube used iframe in html */
+#learn {
+    width: 60%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#learn h1 {
+    margin-top: 10px;
+}
+
+#learn #video {
+    width: 100%;
+    height: 85%;
+}
+
+/* pricing  */
+#deal {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+#deal h1 {
+    position: absolute;
+    top: -50px;
+}
+
+.price {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    outline: 2px solid var(--text-color);
+    padding: 0 0 30px;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.price h2 {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    text-transform: capitalize;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.price h3,
+.price p {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.price button {
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--text-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+
+}
+
+.price:nth-child(2) {
+    background-image: linear-gradient(45deg, #000000ac, #000000a8), url("images/deal/price\ \(3\).jpg");
+}
+
+.price:nth-child(3) {
+    background-image: linear-gradient(45deg, #000000ac, #000000a8), url("images/deal/price\ \(2\).jpg");
+}
+
+.price:nth-child(4) {
+    background-image: linear-gradient(45deg, #000000ac, #000000a8), url("images/deal/price\ \(1\).jpg")
+}
+
+/* footer  */
+#footer {
+    background-color: #dadada;
+    width: 80%;
+    height: 150px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+#footer ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+#footer #terms {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+/* for  a common color  */
+:root {
+    --text-color: #00b4d8;
+
+}
+
+/* media query for screen size adjust  */
+@media (max-width:600px) {
+
+    body,
+    html {
+        height: 350vh;
+    }
+
+    #header {
+        padding: 5px 0;
+        flex-direction: column;
+        height: 100px;
+        top: 0;
+        position: fixed;
+    }
+
+    #logo {
+        height: 50px;
+    }
+
+    #main {
+        margin-top: 100px;
+    }
+
+    #subscribe {
+        height: 50vh;
+    }
+
+    #form {
+        width: 90%;
+    }
+
+    #form h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #form #email {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    #form #submit {
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    #features {
+        width: 90%;
+        height: 70vh;
+    }
+
+    .feature i {
+        width: 30px;
+    }
+
+    .feature .feature-text {
+        width: 75%;
+        gap: 10px;
+    }
+
+    #learn {
+        width: 100%;
+        height: 50vh;
+
+    }
+
+    #learn h1 {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    #deal {
+        width: 90%;
+        height: 150vh;
+        flex-direction: column;
+    }
+
+    .price {
+        width: 90%;
+    }
+
+    #footer {
+        width: 90%;
+        height: 120px;
+    }
+
+    #footer #terms {
+        gap: 10px;
+    }
+
+    #footer h2 {
+        font-size: 24px;
+
+    }
+
+
+
+
+
+}
+
+@media (min-width:600px) and (max-width:1000px) {
+
+    body,
+    html {
+        height: 200vh;
+    }
+
+    #form h1 {
+        text-align: center;
+        font-size: 34px;
+    }
+
+    #form #email {
+        width: 80%;
+    }
+
+    #learn {
+        width: 90%;
+        height: 50vh;
+    }
+
+    #deal {
+        height: 25vh;
+    }
+
+    #deal h1 {
+        top: -75px;
+    }
+
+    .price button {
+        width: 100px;
+        height: 30px;
+        font-size: 16px;
+
+    }
+
+}
